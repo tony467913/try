@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CP Check Solution</title>
+	<link rel="stylesheet" type="text/css" href="CheckSolution.css">
+</head>
+<body>
+<h1>
+	The Great 
+	<br>
+	<span id="colorDisplay">CP Window</span> 
+	<br>
+	MFG Check
+</h1>
+
+<div id="stripe">
+<!-- 	<p>window series</p> -->
+	<button onclick="reset()">Reset</button>
+	<span id="message"></span>
+	<span>Window Series</span>
+	<button class="mode selected">Vista</button>
+	<button class="mode">Vista Plus</button>
+</div>
+
+<div>
+<table id="customers">
+  <tbody>
+  <tr>
+    <th>Window Type</th>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Result</th>
+    <th>Note</th>
+    <th></th>
+  </tr>
+  
+  <tr>
+    <td>PW</td>
+    <td><input type="number" id="PW_w" placeholder=" 12" value="" style="font-size: 24px; width: 72px;"></td>
+    <td><input type="number" id="PW_h" autocomplete="off" class="Calc_input" placeholder=" 12" value="" style="font-size: 24px; width: 72px;"></td>
+    <td id="PW_result"></td>
+    <td id="PW_note"></td>
+    <td><button id="PW_btn" onclick="getPW_Result()">Click here!</button></td>
+  </tr>
+  
+  <tr>
+    <td>SH</td>
+    <td><input type="number" id="SH_w" autocomplete="off" class="Calc_input" placeholder=" 12" value="" style="font-size: 24px; width: 72px;"></td>
+    <td><input type="number" id="SH_h" autocomplete="off" class="Calc_input" placeholder=" 24" value="" style="font-size: 24px; width: 72px;"></td>
+    <td id="SH_result"></td>
+    <td id="SH_note"></td>
+    <td><button id="SH_btn" onclick="getSH_Result()">Click here!</button></td>
+  </tr>  
+  <tr>
+    <td>XO, OX</td>
+    <td><input type="number" id="XO_w" autocomplete="off" class="Calc_input" placeholder=" 24" value="" style="font-size: 24px; width: 72px;"></td>
+    <td><input type="number" id="XO_h" autocomplete="off" class="Calc_input" placeholder=" 12" value="" style="font-size: 24px; width: 72px;"></td>
+    <td id="XO_result"></td>
+    <td id="XO_note"></td>
+    <td><button id="XO_btn" onclick="getXO_Result()">Click here!</button></td>
+  </tr>
+  <tr>
+    <td>EQ-XOX</td>
+    <td><input type="number" id="EQXOX_w" autocomplete="off" class="Calc_input" placeholder=" 48" value="" style="font-size: 24px; width: 72px;"></td>
+    <td><input type="number" id="EQXOX_h" autocomplete="off" class="Calc_input" placeholder=" 12" value="" style="font-size: 24px; width: 72px;"></td>
+    <td id="EQXOX_result"></td>
+    <td id="EQXOX_note"></td>
+    <td><button id="EQXOX_btn" onclick="getEQXOX_Result()">Click here!</button></td>
+  </tr>
+  <tr>
+    <td>UNEQ-XOX</td>
+    <td><input type="number" id="UNEQXOX_w" autocomplete="off" class="Calc_input" placeholder=" 65" value="" style="font-size: 24px; width: 72px;"></td>
+    <td><input type="number" id="UNEQXOX_h" autocomplete="off" class="Calc_input" placeholder=" 12" value="" style="font-size: 24px; width: 72px;"></td>
+    <td id="UNEQXOX_result"></td>
+    <td id="UNEQXOX_note"></td>
+    <td><button id="UNEQXOX_btn" onclick="getUNEQXOX_Result()">Click here!</button></td>
+  </tr>
+
+
+ 
+</tbody>
+</table>
+
+</div>
+
+
+<script type="text/javascript" src="CheckSolution.js"></script>
+</body>
+</html>
